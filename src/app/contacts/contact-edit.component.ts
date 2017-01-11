@@ -5,11 +5,11 @@ import $http from 'axios';
 @Component({
   selector: 'contact-edit',
   template: `
-    <div>ContactEdit</div>
+    <h1>Edit contact</h1>
 
     <contact-form [c]=" c " *ngIf=" c "></contact-form>
 
-    <button (click)=" save() ">Save</button>
+    <button class="btn btn-primary" (click)=" save() ">Save</button>
   `
 })
 export class ContactEditComponent {

@@ -4,9 +4,9 @@ import $http from 'axios';
 @Component({
   selector: 'contacts',
   template: `
-    <div>Contacts</div>
+    <h3>Contacts</h3>
 
-    <table>
+    <table class="table table-bordered">
       <tr>
         <th>Name</th>
         <th>Email</th>

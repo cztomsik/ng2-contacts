@@ -5,11 +5,11 @@ import $http from 'axios';
 @Component({
   selector: 'contact-detail',
   template: `
-    <div>ContactDetail</div>
+    <h3>Contact detail</h3>
     <div *ngIf=" c ">
-      <a [routerLink]=" ['/contacts', c.id, 'edit'] ">Edit</a>
+      <a class="btn btn-default" [routerLink]=" ['/contacts', c.id, 'edit'] ">Edit</a>
 
-      <table>
+      <table class="table" style="margin-top: 20px">
         <tr>
           <th>Name</th>
           <td>{{ c.name }}</td>

@@ -3,8 +3,15 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'contact-form',
   template: `
-    <input [(ngModel)]=" c.name ">
-    <input [(ngModel)]=" c.email ">
+    <div class="form-group">
+      <label class="control-label">Name</label>
+      <input class="form-control" [(ngModel)]=" c.name ">
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">E-mail</label>
+      <input class="form-control" [(ngModel)]=" c.email ">
+    </div>
   `
 })
 export class ContactFormComponent {
